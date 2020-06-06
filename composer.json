@@ -1,0 +1,14 @@
+{
+    "name": "okspen/pager",
+    "description": "Bot framework",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andrew Krasnogolovets",
+            "email": "rip4eg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    }
+}
