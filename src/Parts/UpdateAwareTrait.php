@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Parts;
+namespace Pager\Parts;
 
 use TelegramBot\Api\Types\Update;
 

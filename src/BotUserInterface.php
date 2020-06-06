@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot;
+namespace Pager;
 
-use Pager\Entity\Dto\BotUserParameters;
-
+/**
+ * Interface BotUserInterface
+ * @package Pager
+ */
 interface BotUserInterface
 {
     public function getUserId(): string;
@@ -14,7 +16,13 @@ interface BotUserInterface
 
     public function getLastName(): ?string;
 
-    public function setParameters(BotUserParameters $parameters): void;
+    public function resetPath(): void;
 
-    public function getParameters(): BotUserParameters;
+    public function addPath(string $path): void;
+
+    public function back(): void;
+
+    public function last(): ?string;
+
+    public function lastScreen(): ?string;
 }

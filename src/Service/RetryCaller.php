@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Service;
+namespace Pager\Service;
 
 class RetryCaller
 {

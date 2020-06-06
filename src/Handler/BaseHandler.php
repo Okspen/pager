@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Handler;
+namespace Pager\Handler;
 
+use Pager\Dto\CallbackData;
 use Pager\Entity\BotUser;
-use Pager\Entity\Dto\CallbackData;
-use Pager\Service\Bot\BotSender;
-use Pager\Service\Bot\BotUserInterface;
-use Pager\Service\Bot\Parts\BotUserAwareInterface;
-use Pager\Service\Bot\Parts\CallbackDataAwareInterface;
-use Pager\Service\Bot\Screen\RunResult;
+use Pager\BotSenderInterface;
+use Pager\BotUserInterface;
+use Pager\Parts\BotUserAwareInterface;
+use Pager\Parts\CallbackDataAwareInterface;
+use Pager\Screen\RunResult;
 use TelegramBot\Api\Types\Update;
 
 abstract class BaseHandler implements HandlerInterface, CallbackDataAwareInterface, BotUserAwareInterface
@@ -18,7 +18,7 @@ abstract class BaseHandler implements HandlerInterface, CallbackDataAwareInterfa
     /** @var CallbackData */
     protected $callbackData;
 
-    /** @var BotSender */
+    /** @var BotSenderInterface */
     protected $botSender;
 
     /** @var BotUser */
@@ -29,7 +29,7 @@ abstract class BaseHandler implements HandlerInterface, CallbackDataAwareInterfa
         $this->callbackData = $callbackData;
     }
 
-    public function setBotSender(BotSender $botSender): void
+    public function setBotSender(BotSenderInterface $botSender): void
     {
         $this->botSender = $botSender;
     }

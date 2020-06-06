@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Processor;
+namespace Pager\Processor;
 
 use App\Repository\BotUserRepositoryInterface;
 use App\Service\Bot\BotSender;

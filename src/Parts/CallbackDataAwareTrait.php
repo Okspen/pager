@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Parts;
+namespace Pager\Parts;
 
 use App\Entity\Dto\CallbackData;
 

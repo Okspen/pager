@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Service;
+namespace Pager\Service;
 
 use TelegramBot\Api\Types\MessageEntity;
 

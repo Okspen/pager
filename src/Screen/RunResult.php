@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Screen;
+namespace Pager\Screen;
 
 class RunResult
 {

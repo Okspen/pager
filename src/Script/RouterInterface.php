@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Script;
+namespace Pager\Script;
 
-use Pager\Service\Bot\BotUserInterface;
-use Pager\Service\Bot\Screen\ScreenInterface;
+use Pager\BotUserInterface;
+use Pager\Screen\ScreenInterface;
 use TelegramBot\Api\Types\Update;
 
 interface RouterInterface

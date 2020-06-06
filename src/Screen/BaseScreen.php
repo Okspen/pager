@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Screen;
+namespace Pager\Screen;
 
-use Pager\Service\Bot\BotSender;
-use Pager\Service\Bot\Parts\BotUserAwareInterface;
-use Pager\Service\Bot\Parts\UpdateAwareInterface;
-use Pager\Service\Bot\Parts\UpdateAwareTrait;
+use Pager\BotSenderInterface;
+use Pager\Parts\BotUserAwareInterface;
+use Pager\Parts\UpdateAwareInterface;
+use Pager\Parts\UpdateAwareTrait;
 use TelegramBot\Api\Types\Update;
 
 abstract class BaseScreen implements ScreenInterface, BotUserAwareInterface, UpdateAwareInterface
@@ -16,7 +16,7 @@ abstract class BaseScreen implements ScreenInterface, BotUserAwareInterface, Upd
 
     public const NAME = 'base';
 
-    /** @var BotSender */
+    /** @var BotSenderInterface */
     protected $botSender;
 
     /** @var bool */
@@ -30,10 +30,10 @@ abstract class BaseScreen implements ScreenInterface, BotUserAwareInterface, Upd
      */
     public function addRoute(?Update $update = null): ?string
     {
-        return static::NAME;
+        return self::NAME;
     }
 
-    public function setBotSender(BotSender $botSender): void
+    public function setBotSender(BotSenderInterface $botSender): void
     {
         $this->botSender = $botSender;
     }

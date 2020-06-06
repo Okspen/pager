@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Screen;
+namespace Pager\Screen;
 
-use Pager\Service\Bot\BotSender;
+use Pager\BotSenderInterface;
 use TelegramBot\Api\Types\Update;
 
 interface ScreenInterface
@@ -18,7 +18,7 @@ interface ScreenInterface
 
     public function setUpdate(Update $update): void;
 
-    public function setBotSender(BotSender $botApi): void;
+    public function setBotSender(BotSenderInterface $botApi): void;
 
     public function setFirstVisit(bool $firstVisit): void;
 

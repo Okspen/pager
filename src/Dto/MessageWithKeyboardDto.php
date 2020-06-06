@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Service\Dto;
+namespace Pager\Dto;
 
 class MessageWithKeyboardDto
 {

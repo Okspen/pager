@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Parts;
+namespace Pager\Parts;
 
-use Pager\Entity\Dto\CallbackData;
+use Pager\Dto\CallbackData;
 
 interface CallbackDataAwareInterface
 {

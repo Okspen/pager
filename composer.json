@@ -8,7 +8,12 @@
             "email": "rip4eg@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Pager\\": "src/"
+        }
+    },
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.1"
     }
 }

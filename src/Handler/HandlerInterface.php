@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Handler;
+namespace Pager\Handler;
 
-use Pager\Service\Bot\Screen\RunResult;
+use Pager\Screen\RunResult;
 use TelegramBot\Api\Types\Update;
 
 /**

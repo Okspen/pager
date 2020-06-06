@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pager\Service\Bot\Parts;
+namespace Pager\Parts;
 
-use App\Service\Bot\BotUserInterface;
+use Pager\BotUserInterface;
 
 interface BotUserAwareInterface
 {
